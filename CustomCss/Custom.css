@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.holeCalcBody {
+    padding: 10px;
+    background-color: white;
+    width: 700px;
+    box-shadow: 0px 1px 13px -2px black;
+    margin: auto;
+}
+.headerTitle {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #00834c;
+    color: white;
+}
+
+.formatContianer {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0px;
+    background: linear-gradient(to right, #dad0f7, #f7f1ee 40%);
+
+}
+.primaryBtn {
+    width: 100%;
+    display: block;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.primaryBtn:hover {
+    cursor: pointer;
+}
+.selectGroup {
+    width: 74%;
+    border: 1px solid rgb(197 197 197);
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+#scienceBtn,#gradeSystemBtn{
+    background-color: #00834c;
+    color: white;
+}
+
+.selectGrade_action {
+    width: 25%;
+    border: 1px solid gray;
+    padding: 15px 15px;
+    text-align: center;
+    border: 1px solid rgb(197 197 197);
+    border-radius: 12px;
+}
+
+.groupControl,
+.GPcontrol {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #00834c;
+    border-radius: 11px;
+
+}
+
+.allAction {
+    border: 1px solid rgb(197 197 197);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 3px solid #00834c3d;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.code,
+.subject,
+.pointType {
+    padding: 5px;
+    font-weight: 500;
+    color: #00834c;
+}
+
+.codeTitle {
+    width: 10%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subjectTitle {
+    width: 50%;
+}
+
+.pointTypeTitle {
+    width: 30%;
+    text-align: center;
+}
+
+.commonSubject {
+    margin-top: 0px;
+}
+
+.mainCalcBody {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.gradeSystem {
+    width: 36%;
+}
+.separateSubject {
+    width: 60%;
+    color:#00834c;
+}
+.subjectName{
+    background: #d5d5d563;
+    border-radius: 5px;
+    padding: 10px;
+}
+.allSubjectCode {
+    width: 4%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #d5d5d5;
+    color: #00834c;
+}
+
+select.gradeValue {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #d5d5d563;
+    border-radius: 5px;
+}
+select.gradeValue:hover{
+    cursor: pointer;
+}
+
+input.numberInput {
+    width: 88%;
+    padding: 10px 14px;
+    background-color: #d5d5d5;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+    display: none;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: center;
+}
+.submitContainer {
+    background: url(../Image/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+button#submitBtn {
+    border: none;
+    background: #00834c;
+    padding: 16px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 550;
+    box-shadow: 0px 4px 20px 13px #00000038;
+}
+
+button#submitBtn:hover{
+    background-color: #013b23;
+    cursor: pointer;
+}
+
+

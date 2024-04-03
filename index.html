@@ -5,18 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA Calculator</title>
-    <link rel="stylesheet" href="./Style.css/Custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="CustomCss/Custom.css">
 </head>
 
 <body>
+    <main class="holeCalcBody">
+        <header class="headerTitle">
+            <h1>SSC GPA Calculator</h1>
+        </header>
+        <!-- This is header tag end -->
 
-    <p>helo</p>
+        <!--All department switch container -->
+        <div class="formatContianer">
+            <div class="selectGroup">
+                <h4>Select group</h4>
+                <div class="groupControl">
+                    <button class="primaryBtn" id="scienceBtn" onclick="changeDepartment('science')">
+                        Science
+                    </button>
+                    <button class="primaryBtn" id="businessBtn" onclick="changeDepartment('business')">
+                        Business
+                    </button>
+                    <button class="primaryBtn" id="humanitiesBtn" onclick="changeDepartment('humanities')">
+                        Humanities
+                    </button>
+
+                </div>
+            </div>
+            <div class="selectGrade_action">
+                <h4>Grade Format</h4>
+                <div class="GPcontrol">
+                    <button class="primaryBtn" id="gradeSystemBtn" onclick="changeGradeFormat('grade')">
+                        Grade
+                    </button>
+                    <button class="primaryBtn" id="pointSystemBtn" onclick="changeGradeFormat('point')">
+                        point
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <!--This is endline department container -->
+
+        <!-- Hole GPA calculator container -->
+        <fieldset class="allAction">
+            <legend style="padding:10px">Find your GPA</legend>
+            <!-- this is bangla section -->
+            <div class="mainCalcBody">
+                <div class="allSubjectCode">
+                    <p class="subjectCode">101</p>
+                </div>
+                <div class="separateSubject">
+                    <p class="subjectName">Bangla 1st and 2nd Average</p>
+                </div>
+
+                <div class="gradeSystem">
+                    <select id="bengaliGrade" class="gradeValue">
+                        <option value="">Select Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="">A-</option>
+                        <option value="A">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                    <input type="number" required class="numberInput" id="bengaliMarks">
+                </div>
+            </div>
+            <!-- This is English section start -->
+            <div class="mainCalcBody">
+                <div class="allSubjectCode">
+                    <p class="subjectCode">107</p>
+                </div>
+                <div class="separateSubject">
+                    <p class="subjectName">English 1st and 2nd Average</p>
+                </div>
+                
+                <div class="gradeSystem">
+                    <select id="englishGrade" class="gradeValue">
+                        <option value="">Select Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="">A-</option>
+                        <option value="A">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                    <input type="number" required class="numberInput" id="englishMarks">
+                </div>
+            </div>
+            <!-- This is math section start -->
+            <div class="mainCalcBody">
+                <div class="allSubjectCode">
+                    <p class="subjectCode">109</p>
+                </div>
+                <div class="separateSubject">
+                    <p class="subjectName">Math</p>
+                </div>
+                
+                <div class="gradeSystem">
+                    <select id="mathGrade" class="gradeValue">
+                        <option value="">Select Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="">A-</option>
+                        <option value="A">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                    <input type="number" required class="numberInput" id="mathMarks">
+                </div>
+            </div>
 
 
+            <!-- This is religion section start -->
+            <div class="mainCalcBody">
+                <div class="allSubjectCode">
+                    <p class="subjectCode" id="dynamicCode">112</p>
+                </div>
+                <div class="separateSubject">
+                    <select id="" class="gradeValue" onclick="subjectCodeChanger(this.value)">
+                        <option value="112">Hindu & Moral Edu.</option>
+                        <option value="111">Islam & Moral Edu.</option>
+                        <option value="113">Bouddo & Moral Edu.</option>
+                        <option value="114">Khrshta & Moral Edu.</option>
+                    </select>
+                </div>
+                
+                <div class="gradeSystem">
+                    <select id="religionGrade" class="gradeValue">
+                        <option value="">Select Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="">A-</option>
+                        <option value="A">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                    <input type="number" required class="numberInput" id="religionMarks">
+                </div>
+            </div>
 
 
+            <div class="submitContainer">
+                <button type="submit" id="submitBtn">
+                    Calculate GPA
+                </button>
+            </div>
+        </fieldset>
+        <!-- Hole GPA calculator container ending -->
 
-    <script src="./CustomJs/Custom.js"></script>
+    </main>
+
+    <script src="CustomJs/Custom.js"></script>
 </body>
 
 </html>
