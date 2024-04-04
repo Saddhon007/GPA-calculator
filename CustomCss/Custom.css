@@ -122,7 +122,7 @@
 }
 .separateSubject {
     width: 60%;
-    color:#00834c;
+    color:#000000a8;
 }
 .subjectName{
     background: #d5d5d563;
@@ -167,6 +167,7 @@ input.numberInput {
     background: url(../Image/image.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 100px;
 }
 button#submitBtn {
     border: none;
